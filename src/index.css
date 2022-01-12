@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+ @font-face {
+  font-family: 'ArialRoundedMTBold';
+  src: local('ArialRoundedMTBold'), url(./assets/arlrdbd.ttf) format('ttf');
+}
+
+}
+
+@layer utilities {
+  .menuIcons{
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    
+  }
+  .backroundPage{
+    background: radial-gradient(81.7% 81.7% at 51.38% 50%, rgba(255, 221, 134, 0.5) 1.85%, rgba(67, 184, 38, 0.225) 100%), #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+  }
+  .mainText{
+    font-family: Akronim;
+  }
+  .mainImg{
+    box-shadow: 0px 5px 12px 5px rgba(0, 0, 0, 0.11);
+    border-radius: 73px;
+  }
+  .bgUser{
+    width: 8.93rem;
+    height: 7rem;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px
+   }
+  .productBox{
+    position: static;
+    top: 0px;
+
+    background: linear-gradient(180.25deg, #FFDD86 1.72%, rgba(255, 255, 255, 0) 138.7%), #FFFFFF;
+    border: 1px solid #FFDD86;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;  
+  }
+  .bgProducts{
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #00A3FF;
+  box-sizing: border-box;
+  border-radius: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .mainStroked{
+    -webkit-text-stroke-width: thin;
+  } 
+  .productBoxEshop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    width: 12.94rem;
+    height: 15.75rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  }
+  .secondaryText{
+    font-family: 'Lato', sans-serif;
+  }
+  .boxHeight{ 
+    height: 50.15rem;
+  }
+  .logoText{
+    font-family: ArialRoundedMTBold;
+  }
+  .bluecolor{
+    color: #00A3FF;
+  }
+  .input{
+    background-color: #FBF5DC;
+    border-bottom: 3px solid #00A3FF;
+  }
+  .thin{
+    font-weight: 100;
+  }
+  .loginbg{
+    width: 735px;
+    height: 602px;  
+  }
+  .buttonOrange{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #FFDD86;
+
+  }
+   .productDetailImg{
+    width: 36.3rem;
+    height: 35rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  }
+  .shadow{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .productBorder{
+    border-bottom: 1px solid black;
+  }
+  @media only screen and (max-width: 1200px) {
+    .productDetailImg{
+      width: 26.3rem;
+      height: 25rem;
+    }
+  }
+  @media only screen and (max-width: 1023px) {
+  .phoneMenuBg{
+  background: rgba(141, 176, 132, 0.84);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  }
+  .phoneBackgroundPage{
+    background: radial-gradient(81.7% 81.7% at 51.38% 50%, rgba(255, 221, 134, 0.5) 1.85%, rgba(67, 184, 38, 0.085) 100%), #FFFFFF;
+  }
+  .mainImg{
+    box-shadow: 0px 5px 12px 5px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+  }
+  .absolutePhone{
+    position: absolute;
+  }
+  .bgProducts{
+    background: none;
+    border: none;
+    box-sizing: none;
+    border-radius: none;
+    box-shadow: none;;
+  }
+  .productCathegories{
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 20px 20px;
+  }
+  .signUPBG{
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #00A3FF;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.input{
+  background: #FBF5DC;
+  border-bottom: 3px solid #00A3FF;
+}
+.productBox{
+  
+  background: #FFFFFF;
+  border: 1px solid #FFDD86;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+  
+}
+.productDetailImg{
+  width: 25rem;
+  height: 22rem;
+}
+ 
+}
+
+}
+@media only screen and (max-width: 640px) {
+  .signUPBG{
+    position: absolute;
+    background:none;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: none;
+    border-radius: none;
+  }
+
+  .productDetailImg{
+    width: 17rem;
+    height: 13rem;
+    border-radius: 10px;
+  }
+}
